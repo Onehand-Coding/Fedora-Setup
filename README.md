@@ -17,6 +17,8 @@
 
 Since you're here, chances are you've just installed Fedora and now you're looking at a new desktop wondering, "What next?" Fedora may require some configuration after a fresh install, which is why I've put together this guide, containing the basics and everything I've gathered from various sources.
 
+> 🍴 **Fork Notice:** This is my personal fork of [wz790's Fedora Noble Setup](https://github.com/wz790/Fedora-Noble-Setup). All credit for the original guide goes to them. I've adapted it for my own workflow and hardware (ThinkPad T480 with XFCE).
+
 Note: This guide is not an official guide. It's just a sharing of what I used, and some personal settings or preferences that you can skip. Just read and understand what you're doing before applying anything, and don't just copy and paste everything.
 
 ### 💡 Quick heads up about commands:
@@ -1318,6 +1320,29 @@ sudo tlp-stat -a
 > ```bash
 > sudo dnf remove tlp
 > ```
+
+---
+
+## 🔀 Changes From Original
+
+This fork differs from [wz790's original](https://github.com/wz790/Fedora-Noble-Setup) in the following ways:
+
+**Added:**
+- XFCE desktop environment section (PCManFM, Redshift, Conky, libinput-gestures)
+- TLP power management for laptops
+- Git, uv, ruff, NVM, sshfs, Sublime Text
+- Ollama for local LLMs
+- PostgreSQL and SQLite Browser for databases
+- Pied and GoldenDict-ng for reading
+- speedtest-cli for network testing
+- Remote & Mobile Integration section (SSH, Termux)
+
+**Changed:**
+- Podman as primary container tool (Docker as alternative note)
+- libinput-gestures installed from source instead of dnf
+
+**Removed:**
+- Nothing removed from original - I kept everything and added my workflow
 
 ---
 
